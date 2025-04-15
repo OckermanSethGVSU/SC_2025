@@ -59,7 +59,7 @@ To run Dask distributed data parallel training, use the following command: `pyth
 To run the baseline distributed data parallel training, use the following command: 
 
 
-`python3 opt_basline_ddp.py <options>`. This script supports the following command-line arguments: 
+`python3 opt_basline.py <options>`. This script supports the following command-line arguments: 
 
 | Argument             | Short Form | Type    | Default    | Description                                                              |
 |----------------------|------------|---------|------------|--------------------------------------------------------------------------|
@@ -132,11 +132,3 @@ We added the following files to the PyTorch Geometric Temporal package:
 
 --------------------------------------------------------------------------------
 
-### Other Examples of Index-Batching
-Before deciding to focus on extending Pytorch Geometric Temporal, we modified ST-LLM to support Dask DDP and index-batching, and our source code is [available on Github](https://anonymous.4open.science/r/DDP-Index-Batching-ST-LLM-83E9/README.md) (TODO after review period, update to non-anon link). 
-
-
-**License**
-
-
-- [MIT License](TODO: Add after review)
