@@ -74,13 +74,14 @@ To run the baseline distributed data parallel training, use the following comman
 To run the further optimized Dask distributed data parallel training with batch-level shuffling, use the following command: 
 
 `python3 opt_pems_ddp.py <options>`. This script supports the following command-line arguments: 
-Description                                                              |
+| Argument             | Short Form | Type    | Default    | Description                                                              |
 |----------------------|------------|---------|------------|--------------------------------------------------------------------------|
-| `--mode`             | `-m`       | `str`   | `dask`    | Specifies which version of the program to run. Valid options include 'dask' and 'dask-index'.                     |
+| `--mode`             | `-m`       | `str`   | `dask`    | Specifies which version of the program to run. Valid options include 'dask' and 'dask-index'                    |
 | `--debug`            | `-d`       | `str`   | `False`    | Enables or disables debugging information.                              |
 | `--dist`             |            | `str`   | `False`    | Specifies if computation is distributed across multiple nodes. To do so, we leverage Dask  command line tools to spawn the following Dask constructs: scheduler, client, and workers. For an example, see `submit.sh` and for more details, see  [Dask's Documentation](https://docs.dask.org/en/latest/deploying-cli.html)      |
 | `--npar`             | `-np`      | `int`   | `1`        | The number of GPUs or workers per node.                                 |
 | `--dataset`          |            | `str`   | `pems-bay` | Specifies the dataset to use. Valid options include 'pems-bay', 'pems-all-la', and 'pems'.                                |
+| Argument             | Short Form | Type    | Default    | 
 
 ---------------------------------------------------------
 **Datasets**
